@@ -7,13 +7,13 @@ var app = {
 			var city = $('#CityInput').val();
 			var myApiID = 'APPID=b8fa89ce01d350743d89dc466f6ec135';
 			var url = 'api.openweathermap.org/data/2.5/weather?q=' + city + '&' + myApiID;
-			alert(url)
+			alert('haha ' + url)
 
 			//loadJSON(url, function(){
 			//})
 
 			$.ajax({
-				 url:'api.openweathermap.org/data/2.5/weather?q=' + city + '&' + myApiID,
+				 url:'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&' + myApiID,
 				 type: 'GET',
 				 dataType: 'jsonp',
 				 error: function(data){
