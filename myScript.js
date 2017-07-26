@@ -1,6 +1,5 @@
 
 var app = {
-
 	initialize: function(){
 		console.log('hello there');
 		$('#submit').click(function() {
