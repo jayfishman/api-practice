@@ -6,7 +6,7 @@ var app = {
 		$('#submit').click(function() {
 			alert('fdsfdsdsf');
 			//alert($('#CityInput.val()'))
-		})
+		});
 	}
 }
 
