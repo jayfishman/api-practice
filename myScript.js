@@ -2,7 +2,7 @@
 var app = {
 
 	initialize: function(){
-		$('.submit').click(function() {
+		//$('.submit').click(function() {
 			alert('fdsfdsdsf')
 			//alert($('.CityInput.val()'))
 		});
