@@ -9,10 +9,9 @@ var app = {
 			var url = 'api.openweathermap.org/data/2.5/weather?q=' + city + '&' + myApiID;
 			alert(url)
 
-			//loadJSON(url, functio)
-			// $.get('url', function(data){
-			// 	console.log(data)
-			// });
+			//loadJSON(url, function(){
+			//})
+
 			$.ajax({
 				 url:'api.openweathermap.org/data/2.5/weather?q=' + city + '&' + myApiID,
 				 type: 'GET',
