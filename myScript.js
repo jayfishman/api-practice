@@ -3,8 +3,9 @@ var app = {
 	initialize: function(){
 		console.log('hello there');
 		$('#submit').click(function() {
-			alert('submitted');
-			//alert($('#CityInput.val()'))
+			console.log('haha')
+			//alert('submitted');
+			alert($('#CityInput.val()'))
 		});
 	}
 }
