@@ -5,7 +5,7 @@ var app = {
 		$('#submit').click(function() {
 			console.log('haha')
 			//alert('submitted');
-			alert($('#CityInput.val()'))
+			alert($('#CityInput).val()')
 		});
 	}
 }
