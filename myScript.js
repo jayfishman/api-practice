@@ -13,7 +13,7 @@ var app = {
 			//})
 
 			$.ajax({
-				 url:'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&' + myApiID,
+				 url:'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&' + myApiID,
 				 type: 'GET',
 				 dataType: 'jsonp',
 				 error: function(data){
