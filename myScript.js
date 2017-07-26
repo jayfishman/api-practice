@@ -1,9 +1,9 @@
 
-var haha = {
+var app = {
 	initialize: function(){
 		console.log('hello there');
 		$('#submit').click(function() {
-			alert('fdsfdsdsf');
+			alert('submitted');
 			//alert($('#CityInput.val()'))
 		});
 	}
