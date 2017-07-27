@@ -1,34 +1,26 @@
 
 var app = {
 	initialize: function(){
-		console.log('hello there');
 		$('#submit').click(function() {
-			console.log('haha')
 			var city = $('#CityInput').val();
 			var myApiID = 'APPID=b8fa89ce01d350743d89dc466f6ec135';
-			var url = 'api.openweathermap.org/data/2.5/weather?q=' + city + '&' + myApiID;
-			alert(url)
+			var units = 'units=imperial';
 
-			//loadJSON(url, functio)
-			// $.get('url', function(data){
-			// 	console.log(data)
-			// });
 			$.ajax({
-				 url:'api.openweathermap.org/data/2.5/weather?q=' + city + '&' + myApiID,
+				 url:'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&' + myApiID + '&' + units, 
 				 type: 'GET',
-				 dataType: 'jsonp',
+				 dataType: 'json',
 				 error: function(data){
-				 	console.error("ERROR");
+				 	alert("Please enter a valid city name and ensure that you have internet connection.");
+				 	//make separate alerts for different errors (e.g. invalid name and no internet connection)
 				 },
 				 success: function(data){
-				 	console.log(data)
+				 	console.log(data);
+				 	$('#displayTemp').html('The current temperature in ' + city+ ' is ' + data.main.temp)
 				 }
 
 			});
 
-			// $.get(url, function(data){
-			// 	console.log(data)
-			// });
 		});
 	}
 }
